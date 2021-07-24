@@ -10,6 +10,8 @@ class PostController {
 
   async createPost(req: Request, res: Response) {
     const { content, title } = req.body;
+    const { jwt_user_id } = res.locals;
+
     const slug = title
       .toLowerCase()
       .replace(/ /g, "-")
@@ -20,12 +22,15 @@ class PostController {
         content,
         title,
         slug,
+        created_by: jwt_user_id,
       })
       .get()
       .catch((err) => {
         return res.status(400).json({ error: err.message });
       });
     return res.json({ post });
+
+    res.send(jwt_user_id);
   }
 
   async deletePost(req: Request, res: Response) {
