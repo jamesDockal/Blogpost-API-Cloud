@@ -13,17 +13,6 @@ class PostMiddleware {
 
     return next();
   }
-
-  providedParam(req: Request, res: Response, next: NextFunction) {
-    const { id } = req.params;
-
-    if (!id) {
-      return res
-        .status(400)
-        .json({ error: "You need to provide an id param to delete a post" });
-    }
-    return next();
-  }
 }
 
 export default PostMiddleware;
