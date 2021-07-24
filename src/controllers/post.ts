@@ -23,6 +23,23 @@ class PostController {
       });
     return res.json({ post });
   }
+
+  async deletePost(req: Request, res: Response) {
+    const { id } = req.params;
+
+    try {
+      const postRef = await admin.database().ref(`/posts/${id}`);
+      const post = await (await postRef.get()).exists();
+
+      if (!post) {
+        return res.status(404).json({ error: "Post not Found" });
+      }
+      await postRef.remove();
+      return res.json({ success: "Post deleted!" });
+    } catch (error) {
+      return res.status(400).json({ error: error.message });
+    }
+  }
 }
 
 export default PostController;
