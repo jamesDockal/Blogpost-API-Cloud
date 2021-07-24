@@ -1,10 +1,15 @@
 import { Router } from "express";
-import BlogpostController from "../controllers/post";
+import PostController from "../controllers/post";
+import PostMiddleware from "../middlewares/post";
 
-const blogpostRouter = Router();
+const postRouter = Router();
 
-const { getAllPosts } = new BlogpostController();
+const { getAllPosts, createPost } = new PostController();
 
-blogpostRouter.get("/a", getAllPosts);
+const { passedCrendentials } = new PostMiddleware();
 
-export default blogpostRouter;
+postRouter.get("/", getAllPosts);
+
+postRouter.post("/create", passedCrendentials, createPost);
+
+export default postRouter;

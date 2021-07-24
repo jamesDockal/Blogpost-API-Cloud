@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import * as admin from "firebase-admin";
 
-class BlogpostController {
+class PostController {
   async getAllPosts(req: Request, res: Response) {
     const posts = await admin.database().ref("/posts").get();
 
@@ -25,4 +25,4 @@ class BlogpostController {
   }
 }
 
-export default BlogpostController;
+export default PostController;

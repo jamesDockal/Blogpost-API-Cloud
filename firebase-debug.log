@@ -1,0 +1,31 @@
+[debug] [2021-07-24T05:34:55.560Z] ----------------------------------------------------------------------
+[debug] [2021-07-24T05:34:55.567Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\james\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2021-07-24T05:34:55.568Z] CLI Version:   9.13.1
+[debug] [2021-07-24T05:34:55.568Z] Platform:      win32
+[debug] [2021-07-24T05:34:55.568Z] Node Version:  v14.17.3
+[debug] [2021-07-24T05:34:55.571Z] Time:          Sat Jul 24 2021 02:34:55 GMT-0300 (Brasilia Standard Time)
+[debug] [2021-07-24T05:34:55.572Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-24T05:34:55.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-24T05:34:55.604Z] > authorizing via signed-in user (jamesdockal@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2021-07-24T05:34:55.641Z] [hub] writing locator at C:\Users\james\AppData\Local\Temp\hub-james-study.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@14 from host."}}
+[debug] [2021-07-24T05:34:55.695Z] defaultcredentials: writing to file C:\Users\james\AppData\Roaming\firebase\jamesdockal_gmail_com_application_default_credentials.json
+[debug] [2021-07-24T05:34:55.698Z] Setting GAC to C:\Users\james\AppData\Roaming\firebase\jamesdockal_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\james\\AppData\\Roaming\\firebase\\jamesdockal_gmail_com_application_default_credentials.json"}}
+[debug] [2021-07-24T05:34:55.701Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/james-study/adminSdkConfig [none]
+[debug] [2021-07-24T05:34:56.797Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/james-study/adminSdkConfig 200
+[debug] [2021-07-24T05:34:56.797Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/james-study/adminSdkConfig {"projectId":"james-study","databaseURL":"https://james-study-default-rtdb.firebaseio.com","storageBucket":"james-study.appspot.com","locationId":"us-central"}
+[debug] [2021-07-24T05:34:56.817Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-07-24T05:34:56.817Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-07-24T05:34:56.818Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\james\\.cache\\firebase\\emulators\\ui-v1.5.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\james\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.5.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-07-24T05:34:56.973Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\james\Desktop\Semi Projects\Blogpost-API-Cloud\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\james\\Desktop\\Semi Projects\\Blogpost-API-Cloud\\functions\" for Cloud Functions..."}}
+[debug] [2021-07-24T05:34:57.147Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-07-24T05:34:57.147Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-07-24T05:34:57.147Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-07-24T05:34:57.148Z] [worker-~diagnostic~-5ea2ba54-e47c-422e-a7de-b2c2c410d6cd]: Assigning socketPath: \\?\pipe\C:\Users\james\Desktop\Semi Projects\Blogpost-API-Cloud\functions\7740 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-5ea2ba54-e47c-422e-a7de-b2c2c410d6cd]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\james\\Desktop\\Semi Projects\\Blogpost-API-Cloud\\functions\\7740"}}
+[debug] [2021-07-24T05:34:57.149Z] [worker-~diagnostic~-5ea2ba54-e47c-422e-a7de-b2c2c410d6cd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-5ea2ba54-e47c-422e-a7de-b2c2c410d6cd]: BUSY"}}

@@ -6,7 +6,7 @@ import firebaseAccountCredentials from "./key.json";
 import dotenv from "dotenv";
 dotenv.config();
 
-import blogpostRouter from "./routes/blopost";
+import postRouter from "./routes/blopost";
 import userRouter from "./routes/user";
 
 const serviceAccount = firebaseAccountCredentials as admin.ServiceAccount;
@@ -21,6 +21,6 @@ const app = express();
 app.use(express.json());
 
 app.use("/user", userRouter);
-app.use("/post", blogpostRouter);
+app.use("/post", postRouter);
 
 exports.api = functions.https.onRequest(app);
