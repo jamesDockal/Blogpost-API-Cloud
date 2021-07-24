@@ -5,6 +5,6 @@ const blogpostRouter = Router();
 
 const { getAllPosts } = new BlogpostController();
 
-blogpostRouter.get("/", getAllPosts);
+blogpostRouter.get("/a", getAllPosts);
 
 export default blogpostRouter;
