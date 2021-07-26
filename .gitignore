@@ -7,6 +7,9 @@ typings/
 # Node.js dependency directory
 node_modules/
 
+package-lock.json
+
 .env
+firebase-debug.log
 src/firebase.settings.json
 src/key.json
